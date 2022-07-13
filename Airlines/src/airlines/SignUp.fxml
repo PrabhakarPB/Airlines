@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="signupPane" prefHeight="750.0" prefWidth="1150.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airlines.SignUpController">
+   <children>
+      <Button fx:id="signUp" contentDisplay="CENTER" layoutX="670.0" layoutY="503.0" mnemonicParsing="false" onAction="#signUpButton" prefHeight="39.0" prefWidth="157.0" style="-fx-background-color: green;" text="SIGN IN" textFill="WHITE">
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="fname" alignment="CENTER" layoutX="722.0" layoutY="115.0" prefHeight="39.0" prefWidth="234.0" promptText="ENTER FIRST NAME" style="-fx-border-color: green;" />
+      <TextField fx:id="lname" alignment="CENTER" layoutX="722.0" layoutY="183.0" prefHeight="39.0" prefWidth="241.0" promptText="ENTER LAST NAME" style="-fx-border-color: green;" />
+      <TextField fx:id="mobile" alignment="CENTER" layoutX="726.0" layoutY="256.0" prefHeight="39.0" prefWidth="234.0" promptText="ENTER NUMBER" style="-fx-border-color: green;" />
+      <TextField fx:id="email" alignment="CENTER" layoutX="726.0" layoutY="338.0" prefHeight="39.0" prefWidth="234.0" promptText="ENTER EMAIL ID" style="-fx-border-color: green;" />
+      <PasswordField fx:id="password" alignment="CENTER" layoutX="726.0" layoutY="408.0" prefHeight="39.0" prefWidth="234.0" promptText="ENTER PASSWORD" style="-fx-border-color: green;" />
+      <Button fx:id="Back" layoutX="682.0" layoutY="598.0" mnemonicParsing="false" onAction="#Backbutton" prefHeight="39.0" prefWidth="133.0" style="-fx-background-color: yellow;" text="BACK">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <Pane prefHeight="750.0" prefWidth="400.0" style="-fx-background-color: blue;">
+         <children>
+            <ImageView fitHeight="281.0" fitWidth="282.0" layoutX="60.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../SEM%205/java%20images/2836348-200.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="595.0" layoutY="27.0" prefHeight="53.0" prefWidth="306.0" text="REGISTRATION" textFill="#eb0303" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="576.0" layoutY="125.0" text="FIRST NAME :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="577.0" layoutY="193.0" text="LAST NAME :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="589.0" layoutY="266.0" text="MOBILE :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="585.0" layoutY="348.0" text="EMAIL ID :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="577.0" layoutY="418.0" text="PASSWORD :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AddFlights" prefHeight="750.0" prefWidth="1150.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airlines.AddFlightsController">
+   <children>
+      <TextField fx:id="FCode" alignment="CENTER" layoutX="495.0" layoutY="142.0" prefHeight="41.0" prefWidth="233.0" promptText="FLIGHT CODE" style="-fx-border-color: red;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <ComboBox fx:id="Fsource" layoutX="495.0" layoutY="273.0" prefHeight="41.0" prefWidth="233.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect></ComboBox>
+      <ComboBox fx:id="Fdestination" layoutX="834.0" layoutY="273.0" prefHeight="41.0" prefWidth="233.0" />
+      <DatePicker fx:id="FDate" layoutX="669.0" layoutY="390.0" prefHeight="41.0" prefWidth="233.0" promptText="CALENDER" style="-fx-border-color: blue;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect></DatePicker>
+      <TextField fx:id="Fseats" alignment="CENTER" layoutX="834.0" layoutY="142.0" prefHeight="41.0" prefWidth="233.0" promptText="FLIGTH SEATS" style="-fx-border-color: red;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="Save" layoutX="710.0" layoutY="601.0" mnemonicParsing="false" onAction="#SaveFlights" prefHeight="41.0" prefWidth="150.0" style="-fx-background-color: green;" text="SAVE" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <TextField fx:id="amount" alignment="CENTER" layoutX="669.0" layoutY="492.0" prefHeight="41.0" prefWidth="233.0" promptText="AMOUNT" style="-fx-border-color: green;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Pane prefHeight="751.0" prefWidth="400.0" style="-fx-background-color: blue;">
+         <children>
+            <ImageView fitHeight="445.0" fitWidth="320.0" layoutX="40.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../SEM%205/java%20images/20a4f6d5f674baa27296e96b4b14f3eb.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="593.0" layoutY="20.0" prefHeight="61.0" prefWidth="384.0" text="ADD FLIGHTS" textFill="#1000f5">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="Back" layoutX="469.0" layoutY="677.0" mnemonicParsing="false" onAction="#Backbutton" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AddPassengers" prefHeight="750.0" prefWidth="1151.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airlines.AddPassengersController">
+   <children>
+      <Button fx:id="Save" layoutX="653.0" layoutY="448.0" mnemonicParsing="false" onAction="#SaveHandler" prefHeight="33.0" prefWidth="106.0" style="-fx-background-color: green;" text="SAVE" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="Pid" layoutX="488.0" layoutY="238.0" prefHeight="33.0" prefWidth="116.0" promptText="PId" style="-fx-border-color: blue;" />
+      <TextField fx:id="PName" layoutX="624.0" layoutY="238.0" prefHeight="33.0" prefWidth="165.0" promptText="PName" style="-fx-border-color: blue;" />
+      <TextField fx:id="Ppnumber" layoutX="555.0" layoutY="337.0" prefHeight="33.0" prefWidth="116.0" promptText="PPNUMBER" style="-fx-border-color: blue;" />
+      <TextField fx:id="PAddress" layoutX="739.0" layoutY="337.0" prefHeight="33.0" prefWidth="116.0" promptText="PAddress" style="-fx-border-color: blue;" />
+      <TextField fx:id="Pphone" layoutX="919.0" layoutY="337.0" prefHeight="33.0" prefWidth="132.0" promptText="PPhone" style="-fx-border-color: blue;" />
+      <ComboBox fx:id="pnationality" layoutX="821.0" layoutY="238.0" prefHeight="33.0" prefWidth="122.0" promptText="NATIONALITY" style="-fx-border-color: black;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <ComboBox fx:id="pgender" layoutX="975.0" layoutY="238.0" prefHeight="33.0" prefWidth="98.0" promptText="GENDER" style="-fx-border-color: black;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Button fx:id="Update" alignment="CENTER" contentDisplay="CENTER" layoutX="855.0" layoutY="448.0" mnemonicParsing="false" onAction="#Update" prefHeight="33.0" prefWidth="106.0" style="-fx-background-color: blue;" text="UPDATE" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="Search" layoutX="488.0" layoutY="134.0" onAction="#Search" prefHeight="33.0" prefWidth="585.0" promptText="SEARCH" style="-fx-border-color: green;" />
+      <Pane prefHeight="750.0" prefWidth="400.0" style="-fx-background-color: blue;" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="598.0" layoutY="22.0" prefHeight="42.0" prefWidth="420.0" text="ADD PASSENGERS" textFill="#1304e8" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="Back" layoutX="546.0" layoutY="645.0" mnemonicParsing="false" onAction="#Backbutton" text="Back" />
+   </children>
+</AnchorPane>

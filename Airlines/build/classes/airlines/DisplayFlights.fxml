@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1150.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airlines.DisplayFlightsController">
+   <children>
+      <TextField alignment="CENTER" layoutX="360.0" layoutY="28.0" prefHeight="91.0" prefWidth="547.0" style="-fx-background-color: white;" text="FLIGHTS DETAILS">
+         <font>
+            <Font name="Times New Roman Bold" size="50.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="FlightsTable" layoutX="274.0" layoutY="164.0" prefHeight="422.0" prefWidth="698.0">
+        <columns>
+          <TableColumn fx:id="Fcode" prefWidth="115.0" text="FLIGHT CODE" />
+          <TableColumn fx:id="Fsource" prefWidth="121.0" text="FLIGHT SOURCE" />
+            <TableColumn fx:id="Fdestination" prefWidth="133.0" text="FLIGHT DESTINATION" />
+            <TableColumn fx:id="Fdate" prefWidth="104.0" text="FLIGHT DATE" />
+            <TableColumn fx:id="fseats" prefWidth="112.0" text="FLIGHT SEATS" />
+            <TableColumn fx:id="Famount" prefWidth="113.0" text="AMOUNT" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

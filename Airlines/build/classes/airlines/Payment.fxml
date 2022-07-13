@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="payment" prefHeight="750.0" prefWidth="1149.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airlines.PaymentController">
+   <children>
+      <TextField fx:id="number" alignment="CENTER" layoutX="469.0" layoutY="336.0" prefHeight="37.0" prefWidth="171.0" promptText="CARD NUMBER" style="-fx-border-color: green;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <TextField fx:id="expiry" alignment="CENTER" layoutX="688.0" layoutY="336.0" prefHeight="37.0" prefWidth="171.0" promptText="EXPIRY" style="-fx-border-color: green;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <PasswordField fx:id="cvv" alignment="CENTER" layoutX="916.0" layoutY="336.0" prefHeight="37.0" prefWidth="171.0" promptText="CVV" style="-fx-border-color: green;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></PasswordField>
+      <Button fx:id="Book" layoutX="694.0" layoutY="470.0" mnemonicParsing="false" onAction="#book" prefHeight="37.0" prefWidth="159.0" style="-fx-background-color: green;" text="BOOK TICKET" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="amount" alignment="CENTER" layoutX="916.0" layoutY="159.0" prefHeight="37.0" prefWidth="171.0" promptText="AMOUNT" style="-fx-border-color: green;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <TextField fx:id="ticketid" alignment="CENTER" layoutX="688.0" layoutY="159.0" prefHeight="37.0" prefWidth="171.0" promptText="TICKET ID" style="-fx-border-color: green;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <TextField fx:id="search" alignment="CENTER" layoutX="469.0" layoutY="159.0" onAction="#searchticket" prefHeight="37.0" prefWidth="171.0" promptText="SEARCH TICKET" style="-fx-border-color: green;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <Pane prefHeight="750.0" prefWidth="401.0" style="-fx-background-color: blue;">
+         <children>
+            <ImageView fitHeight="354.0" fitWidth="362.0" layoutX="21.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../SEM%205/java%20images/istockphoto-1195705199-170667a.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="618.0" layoutY="44.0" prefHeight="33.0" prefWidth="313.0" text="PAYMENTS" textFill="#0004ff" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="720.0" layoutY="553.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="107.0" style="-fx-background-color: yellow;" text="BACK">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

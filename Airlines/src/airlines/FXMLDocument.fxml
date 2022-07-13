@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1169.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="next" layoutX="508.0" layoutY="670.0" mnemonicParsing="false" onAction="#next" prefHeight="35.0" prefWidth="135.0" text="NEXT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Circle fx:id="c1" fill="#1f93ff00" layoutX="575.0" layoutY="375.0" radius="234.0" stroke="#12d02f" strokeType="INSIDE" strokeWidth="21.0" style="-fx-stroke-dash-array: 58;" />
+      <Circle fx:id="c2" fill="#1f93ff00" layoutX="576.0" layoutY="375.0" radius="150.0" stroke="#1f3ce4" strokeType="INSIDE" strokeWidth="18.0" style="-fx-stroke-dash-array: 50;" />
+      <Circle fx:id="c3" fill="#1f93ff00" layoutX="576.0" layoutY="375.0" radius="80.0" stroke="#2bffd4" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 50;" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="290.0" layoutY="32.0" prefHeight="53.0" prefWidth="570.0" text="AIRPORT MANAGEMENT SYSTEM" textAlignment="CENTER" textFill="WHITE" underline="true">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

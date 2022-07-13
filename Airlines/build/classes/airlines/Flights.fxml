@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1150.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airlines.FlightsController">
+   <children>
+      <TextField fx:id="FCode" layoutX="500.0" layoutY="168.0" prefHeight="33.0" prefWidth="159.0" promptText="FLIGHT CODE" style="-fx-border-color: blue;" />
+      <TextField fx:id="Fseats" alignment="CENTER" layoutX="926.0" layoutY="168.0" prefHeight="33.0" prefWidth="159.0" promptText="SEATS" style="-fx-border-color: blue;" />
+      <ComboBox fx:id="Fsource" layoutX="575.0" layoutY="314.0" prefHeight="33.0" prefWidth="159.0" promptText=" SOURCE" style="-fx-border-color: green;" />
+      <ComboBox fx:id="Fdestination" layoutX="824.0" layoutY="314.0" prefHeight="33.0" prefWidth="159.0" promptText="DESTINATION" style="-fx-border-color: green;" />
+      <DatePicker fx:id="FDate" layoutX="708.0" layoutY="169.0" prefHeight="33.0" prefWidth="159.0" promptText="CALENDER" style="-fx-border-color: blue;" />
+      <Button fx:id="Save" alignment="CENTER" contentDisplay="CENTER" layoutX="716.0" layoutY="439.0" mnemonicParsing="false" onAction="#SaveHandler" prefHeight="33.0" prefWidth="122.0" style="-fx-background-color: green;" text="SAVE" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <Pane prefHeight="755.0" prefWidth="400.0" style="-fx-background-color: blue;">
+         <children>
+            <ImageView fitHeight="173.0" fitWidth="378.0" layoutX="11.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../SEM%205/java%20images/Domestic-flights.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="614.0" layoutY="29.0" prefHeight="37.0" prefWidth="326.0" text="FLIGHTS" textFill="#1506ee" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="716.0" layoutY="537.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="122.0" style="-fx-background-color: yellow;" text="BACK">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="main" prefHeight="750.0" prefWidth="1150.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airlines.MainController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="596.0" layoutY="27.0" prefHeight="60.0" prefWidth="348.0" text="MAIN PAGE" textFill="#1c08f8" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Label>
+      <Button fx:id="Passengers" contentDisplay="CENTER" layoutX="510.0" layoutY="196.0" mnemonicParsing="false" onAction="#PassengersButton" prefHeight="43.0" prefWidth="158.0" style="-fx-background-color: aqua;" text="PASSENGERS">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="flights" layoutX="849.0" layoutY="189.0" mnemonicParsing="false" onAction="#flightsbutton" prefHeight="43.0" prefWidth="158.0" style="-fx-background-color: aqua;" text="FLIGHTS">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="book" layoutX="572.0" layoutY="340.0" mnemonicParsing="false" onAction="#book" prefHeight="43.0" prefWidth="158.0" style="-fx-background-color: aqua;" text="BOOK FLIGHT">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="cancel" layoutX="780.0" layoutY="340.0" mnemonicParsing="false" onAction="#cancel" prefHeight="43.0" prefWidth="158.0" style="-fx-background-color: aqua;" text="CANCEL TICKET">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="700.0" layoutY="498.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="111.0" style="-fx-background-color: yellow;" text="BACK">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <Pane prefHeight="750.0" prefWidth="400.0" style="-fx-background-color: blue;">
+         <children>
+            <ImageView fitHeight="283.0" fitWidth="367.0" layoutX="17.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../SEM%205/java%20images/87d9e26a839bde7b75c8790fcde1d4ae.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

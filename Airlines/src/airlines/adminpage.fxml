@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airlines.AdminpageController">
+   <children>
+      <Button fx:id="addflights" alignment="CENTER" contentDisplay="CENTER" layoutX="561.0" layoutY="331.0" mnemonicParsing="false" onAction="#addflights" prefHeight="69.0" prefWidth="505.0" style="-fx-border-color: blue;" text="ADD FLIGHTS">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow color="#0b07f5" height="53.62" radius="29.275" width="65.48" />
+         </effect>
+      </Button>
+      <Pane prefHeight="750.0" prefWidth="400.0" style="-fx-background-color: blue;">
+         <children>
+            <ImageView fitHeight="384.0" fitWidth="322.0" layoutX="39.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../SEM%205/java%20images/Travel-Airplane-icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="Back" layoutX="561.0" layoutY="424.0" mnemonicParsing="false" onAction="#Backbutton" prefHeight="69.0" prefWidth="505.0" text="Back" />
+   </children>
+</AnchorPane>
